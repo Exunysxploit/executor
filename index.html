@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Exunysxploit Forum</title>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				animation: colorChange 10s linear infinite;
+				background-image: linear-gradient(135deg, rgb(255, 0, 0), rgb(255, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(255, 0, 0), rgb(255, 0, 0), rgb(0, 0, 0));
+				background-size: 600% 100%;
+			}
+			@keyframes colorChange {
+				0% {
+					background-position: 0% 50%;
+				}
+				100% {
+					background-position: 100% 50%;
+				}
+			}
+			
+			.overlay {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				z-index: 1;
+			}
+			
+			.header {
+				text-align: center;
+				color: #000000;
+				text-shadow: 0 0 60px #0000ff;
+				font-size: 20px;
+				margin: 1px 0;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+				filter: blur(5px);
+				transition: filter 0.3s ease-in-out;
+			}
+			
+			.forum-container {
+				width: 80%;
+				margin: 20px auto;
+				background-color: rgba(0, 0, 0, 0.8);
+				padding: 20px;
+				border-radius: 10px;
+				box-shadow: 0 0 10px rgba(0, 0, 255, 1);
+				filter: blur(5px);
+				transition: filter 0.3s ease-in-out;
+			}
+			
+			.forum-thread {
+				border-bottom: 1px solid #ff0000;
+				padding-bottom: 15px;
+				margin-bottom: 15px;
+			}
+			
+			.thread-title {
+				font-size: 24px;
+				font-weight: bold;
+				color: #ff0000;
+				text-shadow: 0 0 5px #000000;
+			}
+			
+			.thread-author {
+				font-style: italic;
+				color: #6400be;
+				text-shadow: 0 0 5px #666666;
+			}
+			
+			.thread-content {
+				margin-top: 10px;
+				color: #ffffff;
+			}
+			
+			.new-thread {
+				text-align: center;
+				margin-top: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<audio id = "theme" autoplay loop>
+			<source src="https://raw.githubusercontent.com/Exunysxploit/executor/main/theme.mp3">
+		</audio>
+		<div class="overlay">
+			<div class="overlay" onclick="removeBlur()"></div>
+		</div>
+		<div class="header">
+			<h1>Exunysxploit</h1>
+		</div>
+		<div class="forum-container">
+			<div class="forum-thread">
+				<div class="thread-title">Title</div>
+				<div class="thread-author">Something here</div>
+				<div class="thread-content">This is a sample forum thread. More content would go here soon...</div>
+			</div>
+			<div class="forum-thread">
+				<div class="thread-title">Price of Exunysxploit</div>
+				<div class="thread-author">Why is exunysxploit free ?</div>
+				<div class="thread-content">Exunysxploit was pretty much a passion project so money wasn't in mind Its very easy to bring updates and keeping exunysxploit running does not cost any money the only monetization at the moment is the linkvertise on the download link which is really simple and fast and you keep the auto updating software forever.️</div>
+				<br>
+				<div class="thread-title">Our discord server</div>
+				<div class="thread-author">What is this server ?</div>
+				<div class="thread-content">This server is a roblox executor part of exploiting in the roblox community we basically give a free executor made with passion to others for free so other exploiters can use our executor for free instead of paying for others.️</div>
+				<div class="new-thread">
+					<a href="https://discord.gg/exunysxploit" style="color: #ffffff; text-shadow: 0 0 10px #ff0000;">Join the server</a>
+				</div>
+			</div>
+			<div class="new-thread">
+				<a href="https://cdn.discordapp.com/attachments/1330870841356845116/1331338801376788511/Exunysxploit.zip?ex=67914161&is=678fefe1&hm=2764cbb458cf072c0b4becdffeb6f8048fd2b980b8d6288e99f847d024c398f3&" style="color: #ffffff; text-shadow: 0 0 10px #ff0000;">Download</a>
+			</div>
+		</div>
+		<script>
+			function removeBlur() {
+				document.querySelector('.overlay').style.display = "none";
+				document.querySelector('.header').style.filter = "blur(0px)";
+				document.querySelector('.forum-container').style.filter = "blur(0px)";
+			}
+			window.addEventListener("click", () => {
+				document.getElementById("theme").play()
+			})
+		</script>
+	</body>
+</html>
